@@ -1,0 +1,29 @@
+14/02/20115
+
+Following http://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
+went to registrar
+Log in to your Control Panel.
+Go to Domain Central.
+Click on the domain you want to edit.
+Click DNS.
+Use the Modify drop-down to select the type of DNS record you want to modify:
+  Private Nameserver
+  MX Record
+  CNAME Alias
+  NS Record
+  A Record
+  TXT/SPF Record
+  
+dbdt.org  192.30.252.153
+dbdt.org  192.30.252.154
+and remove
+
+dbdt.org 66.96.160.131
+add CNAME
+www bjackel.github.io
+
+back to github, create CNAME file at project root containing "dbdt.org" 
+
+But no joy.  Maybe try again tomorrow?
+
+Wait a minute, www.dbdt.org gives "there isn't a githup pages site heree"
